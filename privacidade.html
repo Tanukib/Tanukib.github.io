@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Política de privacidade — Tradutor de Mangá</title>
+<link rel="icon" href="icon128.png">
+<style>
+:root { color-scheme: light dark; --accent: #e8590c; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.6 system-ui, "Segoe UI", sans-serif; background: #faf7f5; color: #1d1d1f; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+header.hero { display: flex; gap: 20px; align-items: center; margin-bottom: 28px; }
+header.hero img { border-radius: 22px; box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+h1 { font-size: 30px; margin: 0 0 6px; line-height: 1.2; }
+h2 { font-size: 21px; margin: 34px 0 10px; }
+.lead { margin: 0; color: #555; }
+.card { background: #fff; border-radius: 16px; padding: 18px 22px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+.card ul { margin: 6px 0; padding-left: 22px; }
+.support { margin: 26px 0; padding: 16px 20px; border-radius: 16px; background: linear-gradient(135deg, #fff4e6, #ffe8f0); border: 1px solid #ffd2b3; }
+.support p { margin: 0 0 10px; font-weight: 600; color: #7a2e0b; }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.btns a { padding: 9px 18px; border-radius: 999px; color: #fff; font-weight: 600; text-decoration: none; }
+.gh { background: #db2777; } .kofi { background: #13a8e0; }
+.status { display: inline-block; margin-top: 10px; padding: 4px 12px; border-radius: 999px; background: #fff0e6; color: #a63f05; font-size: 14px; font-weight: 600; }
+a { color: #c94a07; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid #e3ddd8; padding: 6px 8px; text-align: left; vertical-align: top; }
+.contact label { display: block; margin: 0 0 10px; font-size: 14px; color: #555; }
+.contact input, .contact textarea { box-sizing: border-box; width: 100%; margin-top: 4px; padding: 8px; border: 1px solid #ccc; border-radius: 8px; font: inherit; }
+.contact button { padding: 10px 20px; border: 0; border-radius: 999px; background: #e8590c; color: #fff; font: 600 15px system-ui, sans-serif; cursor: pointer; }
+.cstatus { min-height: 1.3em; margin: 8px 0 0; color: #1e7a3c; } .cstatus.err { color: #b42318; } .small { font-size: 13px; color: #777; margin: 6px 0 0; }
+footer { margin-top: 40px; font-size: 14px; color: #777; }
+hr { border: 0; border-top: 1px solid #e3ddd8; margin: 34px 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1b1b1d; color: #eee; } .lead, footer { color: #aaa; }
+  .card { background: #262629; box-shadow: none; } th, td { border-color: #3a3a3e; }
+  .support { background: #2b2024; border-color: #5a3a2c; } .support p { color: #ffc9a8; }
+  .status { background: #3a2418; color: #ffb38a; } a { color: #ff8a4c; }
+}
+</style>
+</head>
+<body><main>
+<section class="card"><h1 id="politica-de-privacidade-tradutor-de-manga">Política de privacidade — Tradutor de Mangá</h1>
+<p><em>Última atualização: 7 de novembro de 2026.</em></p>
+<h2 id="resumo">Resumo</h2>
+<ul>
+<li>A extensão <strong>não tem servidor próprio</strong> e <strong>não envia nada ao desenvolvedor</strong>.</li>
+<li>Por padrão, a leitura do texto (OCR) e a tradução acontecem <strong>no seu computador</strong>.</li>
+<li>Só se <strong>você ligar</strong> a tradução online (MyMemory) ou uma IA na internet (Gemini ou outra que você configurar), o texto dos balões, ou a captura da tela no modo Completo do Gemini, vai para esses serviços, para ser traduzido.</li>
+</ul>
+<h2 id="o-que-a-extensao-acessa">O que a extensão acessa</h2>
+<table>
+<thead>
+<tr>
+<th>Dado</th>
+<th>Para quê</th>
+<th>Fica onde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Imagem da parte visível da aba, nos sites que você ativou</td>
+<td>Ler o texto dos balões (OCR)</td>
+<td>Processada na memória e descartada; nunca é gravada</td>
+</tr>
+<tr>
+<td>Texto lido e traduzido, posições dos balões, hash do endereço das imagens</td>
+<td>"Memória" dos capítulos (abrir de novo sem ler outra vez)</td>
+<td>No seu computador (<code>chrome.storage.local</code>), até ~1.500 páginas; dá para apagar em Ajustes</td>
+</tr>
+<tr>
+<td>Lista de sites ativados, preferências, glossários</td>
+<td>Funcionamento da extensão</td>
+<td>No seu computador</td>
+</tr>
+<tr>
+<td>Contagens de uso (número de pedidos, tokens, caracteres)</td>
+<td>Aba "Consumo"</td>
+<td>No seu computador; só números, nunca o conteúdo</td>
+</tr>
+<tr>
+<td>Endereço, modelo e chave da outra IA (se você configurar)</td>
+<td>Falar com o serviço escolhido em seu nome</td>
+<td>No seu computador</td>
+</tr>
+<tr>
+<td>Chave da API do Gemini (se você informar)</td>
+<td>Falar com o Gemini em seu nome</td>
+<td>No seu computador, ou só até fechar o navegador (opção "Guardar a chave só até fechar o navegador")</td>
+</tr>
+<tr>
+<td>E-mail para o MyMemory (opcional)</td>
+<td>Aumentar o limite diário do MyMemory</td>
+<td>No seu computador; enviado só ao MyMemory</td>
+</tr>
+</tbody>
+</table>
+<p>A extensão não coleta histórico de navegação, não usa cookies dos sites, não tem anúncios e não vende nem compartilha dados.</p>
+<h2 id="servicos-de-terceiros-so-se-voce-ligar">Serviços de terceiros (só se você ligar)</h2>
+<ul>
+<li><strong>MyMemory</strong> (Translated srl): recebe o texto dos balões e o par de idiomas; se você informou, também o e-mail. Veja a política de privacidade no site do serviço (mymemory.translated.net).</li>
+<li><strong>Google Gemini API</strong>: no modo Rápido, recebe o texto dos balões, o glossário da obra e as últimas falas traduzidas (para contexto). No modo Completo, recebe também a captura da parte visível da página. O pedido é feito com a <strong>sua</strong> chave, nos termos da API do Gemini que você aceitou com o Google (ai.google.dev).</li>
+<li><strong>Outra IA (compatível com OpenAI)</strong>, só se você configurar: recebe o texto dos balões, o glossário e algumas falas anteriores, no endereço que <strong>você</strong> escolher. Pode ser um programa no seu próprio computador (LM Studio, Ollama: nada sai do PC) ou um serviço na internet (por exemplo Mistral, Groq, OpenRouter, GitHub Models), com a <strong>sua</strong> chave e nos termos desse serviço.</li>
+<li><strong>Tradutor do navegador</strong> (Chrome/Edge): roda no seu computador.</li>
+</ul>
+<h2 id="permissoes">Permissões</h2>
+<ul>
+<li><strong>Ler e alterar dados dos sites</strong> (pedida só quando você ativa um site): para capturar a área visível e desenhar a tradução por cima. Só funciona nos sites que você ativou.</li>
+<li><strong>storage</strong>: guardar preferências e a memória no seu computador.</li>
+<li><strong>scripting / activeTab</strong>: colocar a tradução na aba em que você ativou.</li>
+<li><strong>offscreen</strong>: rodar o OCR num processo separado, no seu computador.</li>
+<li><strong>contextMenus</strong>: o item "Traduzir esta página agora" no botão direito.</li>
+<li><strong>generativelanguage.googleapis.com</strong> (opcional, pedida só ao ligar o Gemini): falar com a API do Gemini.</li>
+</ul>
+<h2 id="seus-controles">Seus controles</h2>
+<p>Desativar a extensão num site, apagar a memória (Ajustes → Apagar memória), desligar o Gemini e o MyMemory, ou desinstalar (o navegador apaga todos os dados da extensão).
+Ajustes → Exportar gera um arquivo no seu computador com preferências, glossários e sites ativados (nunca chaves de API nem e-mail); nada é enviado.</p>
+<h2 id="uso-limitado">Uso limitado</h2>
+<p>O uso de informações recebidas de APIs do Google segue a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Uso Limitado.</p>
+<h2 id="formulario-de-contato">Formulário de contato</h2>
+<p>Na aba Contato (e no site), só quando você clica em "Enviar mensagem", a mensagem, a versão da extensão e o nome e o e-mail, se você informar, vão pelo serviço <strong>Web3Forms</strong> até o e-mail do desenvolvedor. Veja a política de privacidade do serviço em web3forms.com. Nada mais é enviado.</p>
+<h2 id="links-de-apoio">Links de apoio</h2>
+<p>Os botões "GitHub Sponsors" e "Ko-fi" só abrem essas páginas quando você clica. A extensão não envia nada a esses sites.</p>
+<h2 id="contato">Contato</h2>
+<p>Perfil do desenvolvedor no GitHub: <a href="https://github.com/Tanukib" rel="noopener noreferrer">https://github.com/Tanukib</a></p>
+<hr />
+<h1 id="privacy-policy-manga-translator-english">Privacy policy — Manga Translator (English)</h1>
+<ul>
+<li>The extension has <strong>no server of its own</strong> and <strong>sends nothing to the developer</strong>.</li>
+<li>By default, text reading (OCR) and translation run <strong>on your computer</strong>.</li>
+<li>Only if <strong>you turn on</strong> online translation (MyMemory) or the AI (Gemini) is the bubble text, or in Gemini's Full mode a capture of the visible page, sent to those services to be translated.</li>
+<li>Stored on your computer only: enabled sites, preferences, glossaries, a translation cache of up to ~1,500 pages (text, bubble positions and a hash of the image address; can be cleared in Settings), usage counts (numbers only), your Gemini API key (optionally only until the browser closes) and your optional MyMemory e-mail.</li>
+<li>No browsing history collection, no site cookies, no ads, no selling or sharing of data.</li>
+<li>Third parties (only when enabled): MyMemory (see its privacy policy at mymemory.translated.net) and Google Gemini API, called with <strong>your</strong> key under the Gemini API terms you accepted with Google (ai.google.dev).</li>
+<li>"Other AI" (OpenAI-compatible), only if you set it up: receives the bubble text, the glossary and a few previous lines at the address <strong>you</strong> choose, either a program on your own computer (LM Studio, Ollama: nothing leaves your PC) or an online service, with <strong>your</strong> key and under that service's terms.</li>
+<li>The "GitHub Sponsors" and "Ko-fi" buttons only open those pages when you click them; nothing is sent to them.</li>
+<li>Contact form (Contact tab and website): only when you click "Send message", your message, the extension version and the name/e-mail you choose to give go through the Web3Forms service to the developer's e-mail.</li>
+<li>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</li>
+<li>Contact: developer's GitHub profile, <a href="https://github.com/Tanukib" rel="noopener noreferrer">https://github.com/Tanukib</a></li>
+</ul></section>
+<footer>Tradutor de Mangá · <a href="index.html">Início</a> · <a href="demo.html">Testar</a> · <a href="privacidade.html">Privacidade / Privacy</a></footer>
+</main></body>
+</html>
